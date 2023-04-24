@@ -1,0 +1,244 @@
+*{
+    padding: 0 .1rem;
+    margin: 0;
+}
+
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    padding-top:1rem;
+    max-width: 100%;
+}
+
+
+.menu{
+    position: absolute;
+    right: .2rem;
+    top: 4rem;
+    list-style: none;
+    max-width: 100%;
+    background-color:black;
+    display: grid;
+    place-items: center;
+    border-radius: .6rem;
+    padding: 0 3rem;
+    cursor: pointer;
+    font-family: regularFont;
+ 
+
+   
+}
+.menu li{
+    padding: .6rem;
+    color: white;
+}
+
+@font-face {
+    font-family: regularFont;   
+    src: local("AirbnbCerealLight"),
+      url("./Fonts/Inter-Regular.ttf") format("truetype");
+  }
+ 
+
+  @font-face {
+    font-family: boldFont;   
+    src: local("AirbnbCerealLight"),
+      url("./Fonts/Inter-Bold.ttf") format("truetype");
+  }
+ 
+
+
+
+
+.menu li a{
+    text-decoration: none;
+    color:white;
+}
+.healine-container{
+    font-family: regularFont;
+    font-size: .9rem;
+}
+.icons{
+    position: absolute;
+    right: .3rem;
+    top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    max-width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.full-menu{
+    font-family: regularFont;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    display: flex;
+    gap: 2rem;
+    max-width: 100%;
+}
+.full-menu li{
+    list-style: none;
+}
+.logo{
+    font-family: boldFont;
+}
+
+@media screen and (min-width:872px){
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     
+        gap: 1rem;
+    }
+
+    .image img{
+        display: grid;
+        place-content: left;
+        width: 100%;
+    }
+    p{
+        width:100%;
+    }
+    .research-container{
+        height: 94%;
+        width: 100%;
+        font-size: 100%;
+        
+    }
+    .item{
+        
+        grid-column: -6/-15;
+    }
+    .itemii{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+ 
+}
+
+
+
+@media screen and (max-width:300px) {
+    .logo{
+        font-size: .5rem;
+    }
+    .image{
+        max-width: 100%;
+    }
+    .menu{
+        position: absolute;
+        right: 0;
+    }
+    .topic h4{
+        font-size: .8rem;
+    }
+  
+    
+}
+
+
+@media screen  and (max-width:871px){
+    .menu{
+        position: absolute;
+        right: 0;
+    }
+    .image{
+        max-width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    .topic h4{
+        font-size: 1rem;
+    }
+    .itemii{
+        row-gap: 2rem;
+   
+        
+   
+
+    }
+}
+
+
+
+
+section{
+    padding-top: 3rem;
+
+
+}
+.image{
+    display: grid;
+    place-items: left;
+    max-width: 100%;
+}
+.topic{
+    padding-top: 1rem;
+    display: grid;
+    place-items: left;
+    font-family: regularFont;
+    font-size: .9rem;
+    text-align: left;
+    max-width: 100%;
+    padding: 1rem .6rem;
+    
+}
+.research-container{
+    background-color: black;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.list{
+    font-family: regularFont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-header{
+    font-size: .8rem;
+}
+
+.list-img img{
+    width: 90%;
+    height: 50%;
+    border-radius: 1rem;
+}
+.topic-wrapper{
+    gap: 2rem;
+}
+button{
+    width: 10rem;
+    height: 3rem;
+    background: rgb(46, 46, 46);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: .8rem;
+}
+button:hover{
+    background: rgb(180, 180, 180);
+}
+
+
+
+
+
+
+    
+
